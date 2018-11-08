@@ -1,7 +1,7 @@
 package fr.univ_amu.iut.exo1;
 
-
 import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
 
 public class Employe {
 
@@ -13,7 +13,6 @@ public class Employe {
     protected  LocalDate dateEmbauche;
     protected double base;
     protected double nbHeures;
-
 
     public Employe(int num_employe, String numeroInsee, String nom_employe, int echelon, LocalDate dateNaissance, LocalDate dateEmbauche,double base, double nbHeures) {
         this.num_employe = num_employe;
@@ -101,4 +100,8 @@ public class Employe {
                 ", salaire Brut ="+calcSalaireBrut()+
                 '}';
     }
+    public double calcAnciennete(){
+        return ChronoUnit.MONTHS.between(this.dateEmbauche, LocalDate.now());
+    }
 }
+

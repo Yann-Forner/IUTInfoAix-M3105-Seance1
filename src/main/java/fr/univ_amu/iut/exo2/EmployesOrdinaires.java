@@ -4,6 +4,7 @@ import fr.univ_amu.iut.exo1.Employe;
 
 import java.time.LocalDate;
 
+
 public class EmployesOrdinaires extends Employe {
     public EmployesOrdinaires(int num_employe, String numeroInsee, String nom_employe, int echelon, LocalDate dateNaissance, LocalDate dateEmbauche, double base, double nbHeures) {
         super(num_employe, numeroInsee, nom_employe, echelon, dateNaissance, dateEmbauche, base, nbHeures);

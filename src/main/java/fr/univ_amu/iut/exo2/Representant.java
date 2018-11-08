@@ -12,3 +12,4 @@ public class Representant extends Commerciaux {
         return base * nbHeures + echelon * 100 + 100;
     }
 }
+
